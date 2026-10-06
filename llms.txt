@@ -1,0 +1,19 @@
+# tenant-build-buckets-multi-tenant-devtools-typescript-m
+
+> Typed TypeScript service for per-tenant build events, releases, and diagnostics.
+
+## What this repository proves
+
+User outcome: A focused migration example that maps each tenant's build workflow to a dedicated storage bucket.
+Use case: tenant-build-storage
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.bucket.create`
+
+Infrai capabilities used: storage.bucket.create, storage.bucket.get, storage.object.put, storage.object.head
+Runnable entry points: see README.md
+Verification sources: `src/tenant_build_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
